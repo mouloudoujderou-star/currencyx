@@ -1,0 +1,29 @@
+:root{--bg:#f4f6fb;--card:#fff;--ink:#0d1526;--muted:#5b6478;--line:#e3e7f0;--brand:#0a6cff;--brand-ink:#0849b3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Inter",system-ui,-apple-system,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 20px 48px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:8px 0 24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.doc,.hero{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+h1{font-size:32px;line-height:1.15;margin:4px 0 8px;letter-spacing:-.5px}
+h2{font-size:20px;margin:28px 0 8px}
+.eyebrow{color:var(--brand);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;margin:0}
+.updated,.muted{color:var(--muted);font-size:14px}
+.lead{font-size:18px;color:var(--muted)}
+a{color:var(--brand)}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px}
+.btn:hover{background:var(--brand-ink)}
+.table{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+ol li,ul li{margin:8px 0}
+.faq{border-bottom:1px solid var(--line);padding:12px 0}
+.faq summary{font-weight:600;cursor:pointer}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:20px}
+.feature{background:var(--bg);border-radius:14px;padding:14px}
+.feature b{display:block;margin-bottom:4px}
+footer{color:var(--muted);font-size:14px;padding-top:24px;text-align:center}
+footer nav{display:flex;justify-content:center;gap:18px;margin-bottom:8px}
+@media (prefers-color-scheme:dark){:root{--bg:#0a0e17;--card:#121826;--ink:#eef2fa;--muted:#9aa3b7;--line:#232b3d;--brand:#4b93ff}}
